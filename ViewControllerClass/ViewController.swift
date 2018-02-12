@@ -12,6 +12,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        print("Loaded")
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -20,6 +22,21 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        print("I will apperar")
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        print("I did appeared")
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        print("I will disappear")
+    }
+
+    override func viewDidDisappear(_ animated: Bool) {
+        print("I did disappeared")
+    }
 
 }
 
